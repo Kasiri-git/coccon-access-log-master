@@ -13,11 +13,11 @@ function cocoon_access_log_display_table($logs, $options) {
         $post_details = get_post_details($log->post_id);
         echo '<tr>';
         foreach ($options['columns'] as $column) {
-            if ($column === 'post_id') {
-                echo '<td><a href="' . get_permalink($log->post_id) . '" target="_blank">' . $log->post_id . '</a></td>';
-            } elseif ($column === 'title') {
-                echo '<td>' . get_the_title($log->post_id) . '</td>';
+            if ($column === 'title') {
+                // 記事タイトルに編集画面へのリンクを設定
+                echo '<td><a href="' . get_edit_post_link($log->post_id) . '" target="_blank">' . get_the_title($log->post_id) . '</a></td>';
             } else {
+                // その他のカラムの処理
                 echo '<td>' . esc_html($post_details[$column] ?? $log->$column) . '</td>';
             }
         }

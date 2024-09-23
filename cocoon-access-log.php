@@ -3,7 +3,7 @@
 Plugin Name: Cocoon Access Log
 Plugin URI: https://kasiri.icu/blog/wordpress/1522/
 Description: Cocoon専用プラグイン。アクセスの多い順に日、週、月ごとにソートして記事一覧を表示します。
-Version: 1.16
+Version: 1.17
 Author: Kasiri
 Author URI: https://kasiri.icu/
 */
