@@ -1,0 +1,55 @@
+/* cocoon-access-log.css */
+
+/* 表示オプションのラッパー */
+#screen-options-wrap {
+    display: flex; /* 横並びにするためのフレックスボックス */
+    flex-wrap: wrap; /* ラップさせて折り返す */
+    gap: 15px; /* 各オプションの間にスペースを追加 */
+}
+
+/* 表示カラムの幅設定 */
+table.widefat th.title-column {
+    width: 60%; /* タイトルの幅を広く設定 */
+}
+
+table.widefat th {
+    width: 8%; /* 他のカラムの幅を狭く設定 */
+}
+
+/* 他のスタイルはそのまま */
+#screen-options-wrap {
+    display: none; /* 初期は非表示 */
+    padding: 10px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* 他のコンテンツとの間隔を確保 */
+    border-radius: 5px; /* 角を少し丸く */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 薄めの影 */
+}
+
+/* ボタンのスタイル */
+#screen-options-toggle {
+    background: #0073aa;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px; /* ボタンと他のコンテンツとの間隔 */
+    border-radius: 5px; /* 角を少し丸く */
+    border: none; /* ボーダーなし */
+}
+
+/* ボタンのホバー時のスタイル */
+#screen-options-toggle:hover {
+    background: #006799;
+}
+
+/* チェックボックスラベルのスタイル */
+#screen-options-wrap label {
+    margin-bottom: 0; /* 下のマージンを削除 */
+}
+
+/* オプションボタンのマージン */
+#screen-options-wrap .option-button {
+    margin-left: 10px; /* ボタンと選択要素の間に余白を追加 */
+}
+
